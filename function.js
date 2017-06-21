@@ -122,3 +122,12 @@ if(isNarrow()){
 }else{
     window.alert('広いです');
 }
+
+// 4-3-2(p.99)
+function calculateTaxIncluding(prices){
+    var results=[];
+    for (var index=0, length=prices.length; index<length; index++){
+        results.push(prices[index]*1.08);
+    }
+    return results;
+}

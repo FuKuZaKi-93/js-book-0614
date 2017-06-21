@@ -181,53 +181,128 @@ if(window.innerWidth<1000){
 ### 分かったこと
 ### 疑問・分からないこと（もしあれば）
 
-## 4-2-4 (p.93)
+
+## 4-3 配列
+## 4-3-1 (p.95)
 ### Consoleの実行ログ
+var sampleArray = [];
+undefined
+sampleArray;
+[]
+### Console以外の動き（もしあれば）
+### 分かったこと
+配列の作り方
+### 疑問・分からないこと（もしあれば）
+
+## 4-3-1 (p.96)
+### Consoleの実行ログ
+var sampleArray = [1,3,5];
+undefined
+sampleArray;
+(3) [1, 3, 5]
 ### Console以外の動き（もしあれば）
 ### 分かったこと
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-2 (p.96)
 ### Consoleの実行ログ
+var sampleArray = [];
+undefined
+sampleArray.push(59);
+1
+sampleArray;
+[59]
+sampleArray.push(61);
+2
+sampleArray;
+(2) [59, 61]
+### Console以外の動き（もしあれば）
+### 分かったこと
+配列に値を追加する方法
+### 疑問・分からないこと（もしあれば）
+
+## 4-3-2 (p.96)
+### Consoleの実行ログ
+sampleArray[0];
+59
+sampleArray[1]
+61
+sampleArray[2];
+undefined
 ### Console以外の動き（もしあれば）
 ### 分かったこと
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-2 (p.97)
 ### Consoleの実行ログ
+sampleArray.splice(0,1);
+[59]
+sampleArray;
+[61]
+### Console以外の動き（もしあれば）
+### 分かったこと
+配列の値を削除する方法
+### 疑問・分からないこと（もしあれば）
+
+## 4-3-2 (p.97)
+### Consoleの実行ログ
+sampleArray.push(67);
+2
+sampleArray.push(71);
+3
+sampleArray.push(72);
+4
+sampleArray;
+(4) [61, 67, 71, 72]
+sampleArray.splice(3,1);
+[72]
+sampleArray.push(73);
+4
+sampleArray;
+(4) [61, 67, 71, 73]
+sampleArray.splice(1,2);
+(2) [67, 71]
+sampleArray
+(2) [61, 73]
 ### Console以外の動き（もしあれば）
 ### 分かったこと
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-2 (p.97)
 ### Consoleの実行ログ
+sampleArray.length;
+2
 ### Console以外の動き（もしあれば）
 ### 分かったこと
+配列に入っている値の個数を調べる方法
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-3 (p.99)
 ### Consoleの実行ログ
+calculateTaxIncluding([100,200,40,50]);
+(4) [108, 216, 43.2, 54]
 ### Console以外の動き（もしあれば）
 ### 分かったこと
+配列と関数を組み合わせる方法
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-4 (p.100)
 ### Consoleの実行ログ
+var a =[0,1,1,2,3,5,8];
+undefined
+a.toString();
+"0,1,1,2,3,5,8"
 ### Console以外の動き（もしあれば）
 ### 分かったこと
+配列を文字列にづる方法
 ### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
+
+## 4-3-4 (p.100)
 ### Consoleの実行ログ
-### Console以外の動き（もしあれば）
-### 分かったこと
-### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
-### Consoleの実行ログ
-### Console以外の動き（もしあれば）
-### 分かったこと
-### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
-### Consoleの実行ログ
-### Console以外の動き（もしあれば）
-### 分かったこと
-### 疑問・分からないこと（もしあれば）
-## 4-2-4 (p.93)
-### Consoleの実行ログ
+var a =[0,1,1,2,3,5,8];
+undefined
+a.join(' and ');
+"0 and 1 and 1 and 2 and 3 and 5 and 8"
 ### Console以外の動き（もしあれば）
 ### 分かったこと
 ### 疑問・分からないこと（もしあれば）
