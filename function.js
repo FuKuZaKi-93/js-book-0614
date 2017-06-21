@@ -57,3 +57,68 @@ function sum(rangeFrom,rangeTo){
     }
     window.alert(total);
 }
+
+// p.87上
+var hoge =5;
+function testScope(){
+    window.alert(hoge);
+}
+
+// p.87下
+function sum (rangeFrom,rangeTo){
+    let total=0;
+    for(let counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    window.alert(total);
+}
+
+// p.88
+function sum(rangeFrom,rangeTo){
+    let total=0;
+    for(let counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    window.alert(counter);
+}
+
+// 4-2-4(p.88)
+function sum(rangeFrom,rangeTo,withDialog){
+    var toal=0;
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    if(withDialog){
+        window.alert(total);
+    }else{
+        console.log(total);
+        
+    }
+}
+
+// p.91
+var total=0;
+function sum(rangeFrom,rangeTo){
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+}
+
+// p.92
+function sum(rangeFrom,rangeTo){
+    var total=0;
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    return total;
+}
+
+// p.93
+function isNarrow(){
+    return window.innerWidth<1000;
+}
+if(isNarrow()){
+    window.alert('狭いです');
+}else{
+    window.alert('広いです');
+}
