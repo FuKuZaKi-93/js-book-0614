@@ -12,3 +12,48 @@ function sum() {
     }
     window.alert(total);
 }
+
+// リスト4.2（p.81）
+function sum(rangeTo){
+    var total=0;
+    for(var counter=1; counter<=rangeTo; counter++){
+        total +=counter;
+    }
+    window.alert(total);
+}
+
+// リスト4.3（p.82）
+function sum(rangeFrom,rangeTo){
+    var total =0;
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    window.alert(total);
+}
+
+// リスト4.4（p.84）
+function sum(rangeFrom,rangeTo=10){
+    var total=0;
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    window.alert(total);
+}
+
+// 4-2-2（p.85）
+function sum(rangeTo,rangeFrom=1){
+    var total=0;
+    for(var counter=rangeFrom; counter<=rangeTo; counter++){
+        total+=counter;
+    }
+    window.alert(total);
+}
+
+// 4-2-3（p.85）
+function sum(rangeFrom,rangeTo){
+    var total =0;
+    for (var counter=rangeFrom; counter<=rangeTo; counter++){
+        total += counter;
+    }
+    window.alert(total);
+}
